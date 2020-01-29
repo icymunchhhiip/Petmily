@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="no_dp">0dp</dimen>
+    <dimen name="row_collapse">5dp</dimen>
+    <dimen name="collapse_in_row">2dp</dimen>
+
+    <dimen name="title_font">20sp</dimen>
+    <dimen name="normal_font">15sp</dimen>
+
+    <dimen name="main_bottom_bar_padding">4dp</dimen>
+    <dimen name="pager_weight">9</dimen>
+    <dimen name="btn_intro_next_padding_end">12dp</dimen>
+    <dimen name="btn_intro_next_padding_bottom">-12dp</dimen>
+    <dimen name="intro_view_collapse">4dp</dimen>
+</resources>

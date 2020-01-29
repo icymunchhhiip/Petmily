@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBright"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/row_collapse"
+            android:gravity="center"
+            android:text="@string/sign_in_ko"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/title_font" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/row_collapse"
+            android:layout_marginTop="@dimen/row_collapse"
+            android:layout_marginEnd="@dimen/row_collapse"
+            android:layout_marginBottom="@dimen/collapse_in_row"
+            android:text="@string/pet_name_ko"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/normal_font" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/row_collapse"
+            android:layout_marginTop="@dimen/collapse_in_row"
+            android:layout_marginEnd="@dimen/row_collapse"
+            android:layout_marginBottom="@dimen/row_collapse"
+            android:autofillHints="@string/pet_name_ko"
+            android:hint="@string/pet_name_ko"
+            android:inputType="text"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="@dimen/normal_font"
+            tools:targetApi="o" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/row_collapse"
+            android:layout_marginTop="@dimen/row_collapse"
+            android:layout_marginEnd="@dimen/row_collapse"
+            android:layout_marginBottom="@dimen/collapse_in_row"
+            android:text="@string/pet_birth_ko"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/normal_font" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/row_collapse"
+            android:layout_marginTop="@dimen/collapse_in_row"
+            android:layout_marginEnd="@dimen/row_collapse"
+            android:layout_marginBottom="@dimen/row_collapse"
+            android:autofillHints="@string/pet_birth_ko"
+            android:hint="@string/pet_birth_ko"
+            android:inputType="text"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="@dimen/normal_font"
+            tools:targetApi="o" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/row_collapse"
+            android:layout_marginTop="@dimen/row_collapse"
+            android:layout_marginEnd="@dimen/row_collapse"
+            android:layout_marginBottom="@dimen/collapse_in_row"
+            android:text="@string/pet_sex_ko"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/normal_font" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/row_collapse"
+            android:layout_marginTop="@dimen/collapse_in_row"
+            android:layout_marginEnd="@dimen/row_collapse"
+            android:layout_marginBottom="@dimen/row_collapse">
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/collapse_in_row"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:textSize="@dimen/normal_font"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/pet_sex_female_ko"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/collapse_in_row"
+                android:textSize="@dimen/normal_font"
+                android:textColor="@color/colorPrimaryDark"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:text="@string/pet_sex_male_ko"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/row_collapse"
+            android:layout_marginTop="@dimen/row_collapse"
+            android:layout_marginEnd="@dimen/row_collapse"
+            android:layout_marginBottom="@dimen/collapse_in_row"
+            android:text="@string/pet_breeds_ko"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/normal_font" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/row_collapse"
+            android:layout_marginTop="@dimen/collapse_in_row"
+            android:layout_marginEnd="@dimen/row_collapse"
+            android:layout_marginBottom="@dimen/row_collapse"
+            android:gravity="center">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/btn_search_breeze"
+                android:textSize="@dimen/normal_font"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorPrimary"
+                android:autofillHints="@string/pet_breeds_desc_ko"
+                android:hint="@string/pet_breeds_desc_ko"
+                android:inputType="text"
+                tools:targetApi="o"
+                android:layout_marginEnd="@dimen/collapse_in_row"/>
+
+            <ImageButton
+                android:layout_alignParentEnd="true"
+                android:id="@+id/btn_search_breeze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:src="@drawable/ic_search_24dp" />
+        </RelativeLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_pet_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/color_box"
+        android:minHeight="0dp"
+        android:text="@string/sign_in_complete_ko"
+        android:textColor="@color/colorLight"
+        android:textSize="@dimen/normal_font"/>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Petmily</string>
+
+    <string name="kakao_app_key">ef9b1314a28b5a6be4c473a5e9a978af</string>
+
+    <string name="intro_health_ko">운동량 체크</string>
+    <string name="gps">GPS</string>
+    <string name="led">LED</string>
+    <string name="intro_health_desc_ko">건강에 있어 꼭 필요한 산책, 충분한 지 확인해보세요!</string>
+    <string name="gps_desc_ko">반려견의 위치를 확인해 보세요!</string>
+    <string name="led_desc_ko">야간에도 산책이 두렵지 않아요!</string>
+
+    <string name="setting_permit_ko">선택적 접근 권한 설정</string>
+    <string name="camera_ko">카메라</string>
+    <string name="gallery_ko">사진첩</string>
+    <string name="notification_ko">알림</string>
+    <string name="microphone_ko">마이크</string>
+    <string name="purpose_camera_ko">프로필 사진 촬영</string>
+    <string name="purpose_gallery_ko">프로필 사진 저장</string>
+    <string name="purpose_notification_ko">이벤트와 혜택알림</string>
+    <string name="purpose_microphone_ko">동영상 촬영 기능</string>
+    <string name="selective_permit_ko">선택적 접근 권한은 동의하지 않아도 해당기능 외 앱 이용이 가능합니다.</string>
+
+    <string name="ok_button_ko">확인</string>
+
+    <string name="login_please_ko">로그인하고 이용해 보세요!</string>
+    
+    <string name="sign_in_ko">회원가입</string>
+    <string name="nickname_ko">닉네임</string>
+    <string name="email_ko">이메일</string>
+    <string name="enter_auth_num_ko">인증번호 입력</string>
+    <string name="policy_ko">약관동의</string>
+    <string name="all_policy_ko">전체동의</string>
+    <string name="service_policy_ko">서비스 이용약관 동의 (필수)</string>
+    <string name="privacy_policy_ko">개인정보 수입 이용 동의 (필수)</string>
+    <string name="privacy_policy_share_ko">개인정보 제공 동의 (필수)</string>
+
+    <string name="next_ko">다음</string>
+    <string name="sign_in_complete_ko">가입 완료</string>
+    
+    <string name="pet_name_ko">반려견 이름</string>
+    <string name="pet_birth_ko">반려견 생일</string>
+    <string name="pet_sex_ko">반려견 성별</string>
+    <string name="pet_sex_female_ko">암컷</string>
+    <string name="pet_sex_male_ko">수컷</string>
+    <string name="pet_breeds_ko">반려견 품종</string>
+    <string name="pet_breeds_desc_ko">품종을 입력해 주세요</string>
+    
+    <string name="home_ko">홈</string>
+    <string name="noti_ko">알림</string>
+    <string name="community_ko">커뮤니티</string>
+    <string name="setting_ko">설정</string>
+</resources>

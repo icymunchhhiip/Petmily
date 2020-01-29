@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/splashFragment">
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.petmily.petmily.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/splash">
+        <action
+            android:id="@+id/action_splashFragment_to_introPagerFragment"
+            app:destination="@id/introPagerFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_mainPagerFragment"
+            app:destination="@id/mainPagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/introPagerFragment"
+        android:name="com.petmily.petmily.Intro.IntroPagerFragment"
+        android:label="IntroPagerFragment"
+        tools:layout="@layout/intro_pager">
+        <action
+            android:id="@+id/action_introPagerFragment_to_permitDescFragment"
+            app:destination="@id/permitDescFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainPagerFragment"
+        android:name="com.petmily.petmily.main.MainPagerFragment"
+        android:label="MainPagerFragment"
+        tools:layout="@layout/main_pager" />
+    <fragment
+        android:id="@+id/signInAuthFragment"
+        android:name="com.petmily.petmily.signin.AuthFragment"
+        android:label="SignInAuthFragment"
+        tools:layout="@layout/sign_in_auth">
+        <action
+            android:id="@+id/action_signInAuthFragment_to_signInPetFragment"
+            app:destination="@id/signInPetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/permitDescFragment"
+        android:name="com.petmily.petmily.PermitDescFragment"
+        android:label="PermitDescFragment"
+        tools:layout="@layout/permit_desc">
+        <action
+            android:id="@+id/action_permitDescFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.petmily.petmily.kakaologin.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/login">
+        <action
+            android:id="@+id/action_loginFragment_to_signInAuthFragment"
+            app:destination="@id/signInAuthFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_mainPagerFragment"
+            app:destination="@id/mainPagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInPetFragment"
+        android:name="com.petmily.petmily.signin.PetFragment"
+        android:label="SignInPetFragment"
+        tools:layout="@layout/sign_in_pet">
+        <action
+            android:id="@+id/action_signInPetFragment_to_mainPagerFragment"
+            app:destination="@id/mainPagerFragment" />
+    </fragment>
+</navigation>

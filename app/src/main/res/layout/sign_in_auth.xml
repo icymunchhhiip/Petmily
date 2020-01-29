@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBright"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="@dimen/pager_weight"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/row_collapse"
+            android:gravity="center"
+            android:text="@string/sign_in_ko"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/title_font" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/row_collapse"
+            android:layout_marginTop="@dimen/row_collapse"
+            android:layout_marginEnd="@dimen/row_collapse"
+            android:layout_marginBottom="@dimen/collapse_in_row"
+            android:text="@string/nickname_ko"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/normal_font" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/row_collapse"
+            android:layout_marginTop="@dimen/collapse_in_row"
+            android:layout_marginEnd="@dimen/row_collapse"
+            android:layout_marginBottom="@dimen/row_collapse"
+            android:autofillHints="@string/nickname_ko"
+            android:hint="@string/nickname_ko"
+            android:inputType="text"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="@dimen/normal_font"
+            tools:targetApi="o" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/row_collapse"
+            android:layout_marginTop="@dimen/row_collapse"
+            android:layout_marginEnd="@dimen/row_collapse"
+            android:layout_marginBottom="@dimen/collapse_in_row"
+            android:text="@string/email_ko"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/normal_font" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/row_collapse"
+            android:layout_marginTop="@dimen/collapse_in_row"
+            android:layout_marginEnd="@dimen/row_collapse"
+            android:layout_marginBottom="@dimen/row_collapse"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints="@string/email_ko"
+                android:hint="@string/email_ko"
+                android:inputType="text"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/normal_font"
+                tools:targetApi="o" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:minWidth="@dimen/no_dp"
+                android:minHeight="@dimen/no_dp"
+                android:text="@string/ok_button_ko"
+                android:textColor="@color/colorBright"
+                android:textSize="@dimen/normal_font" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/row_collapse"
+            android:layout_marginTop="@dimen/row_collapse"
+            android:layout_marginEnd="@dimen/row_collapse"
+            android:layout_marginBottom="@dimen/collapse_in_row"
+            android:text="@string/enter_auth_num_ko"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/normal_font" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/row_collapse"
+            android:layout_marginTop="@dimen/collapse_in_row"
+            android:layout_marginEnd="@dimen/row_collapse"
+            android:layout_marginBottom="@dimen/row_collapse"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints="@string/enter_auth_num_ko"
+                android:hint="@string/enter_auth_num_ko"
+                android:inputType="text"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/normal_font"
+                tools:targetApi="o" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:minWidth="@dimen/no_dp"
+                android:minHeight="@dimen/no_dp"
+                android:text="@string/ok_button_ko"
+                android:textColor="@color/colorBright"
+                android:textSize="@dimen/normal_font" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(남은 시각)"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/normal_font" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/row_collapse"
+            android:layout_marginTop="@dimen/row_collapse"
+            android:layout_marginEnd="@dimen/row_collapse"
+            android:layout_marginBottom="@dimen/collapse_in_row"
+            android:text="@string/policy_ko"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/normal_font" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/all_policy_ko"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/normal_font" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/service_policy_ko"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/normal_font" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_policy_ko"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/normal_font" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_policy_share_ko"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/normal_font" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_auth_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/color_box"
+        android:minHeight="@dimen/no_dp"
+        android:text="@string/next_ko"
+        android:textColor="@color/colorLight"
+        android:textSize="@dimen/normal_font" />
+</LinearLayout>
